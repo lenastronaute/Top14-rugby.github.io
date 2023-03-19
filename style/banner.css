@@ -1,0 +1,27 @@
+.banner {
+	background-image: url('../images/top14.png');
+	background-size: cover;
+	height: 75vh;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.banner h1 {
+    color: #D0A455;
+    text-shadow: 4px 2px 3px #775921;
+    text-align: right;
+    padding-bottom: 120px;
+
+}
+
+.banner h2 {
+	color: white;
+	text-align: right;
+	font-style: italic;
+
+}

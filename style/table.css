@@ -1,0 +1,52 @@
+caption {
+  font-size: 30px;
+  color: #775921;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #775921;
+}
+
+tr:hover {
+  background-color: #D0A455;
+  cursor: pointer;
+}
+
+tr.selected {
+  background-color: #ffc107;
+}
+
+tr.selected:hover {
+  background-color: #ff9800;
+}
+
+td:nth-child(2) {
+  text-align: left;
+}
+
+td:nth-child(n+8) {
+  text-align: center;
+}
+
+td:nth-child(9),
+td:nth-child(10) {
+  font-weight: bold;
+}
+
+td:nth-child(n+11) {
+  font-style: italic;
+}

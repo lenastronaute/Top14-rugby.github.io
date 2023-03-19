@@ -1,0 +1,82 @@
+/* Styles pour le header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Styles pour le main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  background-color: #D0A455;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(208, 164, 85, 0.3);
+}
+
+/* Boîtes 1 et 2 côte à côte */
+.box:nth-of-type(1),
+.box:nth-of-type(2) {
+  width: calc(50% - 10px);
+}
+
+/* Boîte 3 pleine largeur */
+.box:nth-of-type(3) {
+  width: 100%;
+}
+
+/* Boîtes 4 et 5 côte à côte */
+.box:nth-of-type(4),
+.box:nth-of-type(5) {
+  width: calc(50% - 10px);
+}
+
+/* Espacement entre les boîtes */
+.box + .box {
+  margin-left: 20px;
+}
+
+/* Remise à zéro de la marge pour la 3ème boîte */
+.box:nth-of-type(3) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  flex: 1 0 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #D0A455;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(208, 164, 85, 0.1);
+}
+
+.box:nth-child(3) {
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    flex-basis: 100%;
+  }
+}
+

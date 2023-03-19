@@ -1,0 +1,38 @@
+.gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 10px;
+  border: 5px solid white;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel img:hover {
+  transform: scale(1.2);
+}
+
+.carousel img:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
